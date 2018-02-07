@@ -1,21 +1,21 @@
 //
 //  AppDelegate.h
-//  Beaconframework_objc
+//  beacon_test
 //
-//  Created by ccHsieh on 2018/2/7.
-//  Copyright © 2018年 cchsieh. All rights reserved.
+//  Created by JoeJoe on 2016/4/6.
+//  Copyright © 2016年 JoeJoe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
+#import <BeaconFramework/BeaconFramework.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (readonly, strong) NSPersistentContainer *persistentContainer;
-
-- (void)saveContext;
+@property (nonatomic, strong) IIINotification *notification;
+@property (nonatomic, strong) IIIBeacon *iiibeacon;
+@property (nonatomic, strong) BeaconInfo *beacon_info;
+@property (nonatomic, strong) IIIBeaconDetection *detection;
 
 
 @end
