@@ -20,7 +20,7 @@
     _iiibeacon = [IIIBeacon new];
     _detection = [IIIBeaconDetection new];
     
-    [_iiibeacon get_beacons_withkey_securityWithServer:@"ideas.iiibeacon.net" key: @"e36a76430c205c03e6f3be43db917f7ea464cd4c" completion: ^(BeaconInfo *item , BOOL Sucess) {
+    [_iiibeacon get_beacons_withkey_securityWithServer:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
         if (Sucess) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 _detection = [[IIIBeaconDetection alloc] initWithBeacon_data:item];
@@ -38,7 +38,7 @@
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
             NSLog(key.id);
-                [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"e36a76430c205c03e6f3be43db917f7ea464cd4c" completion:^(message *item, BOOL Sucess){
+                [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
                         if (item.content.products.count > 0) {
