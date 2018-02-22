@@ -166,12 +166,12 @@ Write a program in BeaconDetectd()
 ##### Support ios11.0 and higher
 - BeaconFramework_swift project
 
-  Build and run the BeaconFramework_demo.xcodeproj in Xcode
+  Build and run the BeaconFramework_swift.xcodeproj in Xcode
 
 #### Object-C:
 - BeaconFramework_objc project
 
-  Build and run the BeaconFramework_demo(object-c) in Xcode
+  Build and run the BeaconFramework_objc.xcodeproj in Xcode
 
 
 ## License
