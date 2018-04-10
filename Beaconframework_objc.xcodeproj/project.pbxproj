@@ -14,8 +14,8 @@
 		1E29757E202AE91B00270112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E29757D202AE91B00270112 /* Assets.xcassets */; };
 		1E297581202AE91B00270112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E29757F202AE91B00270112 /* LaunchScreen.storyboard */; };
 		1E297584202AE91B00270112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E297583202AE91B00270112 /* main.m */; };
-		1E29758B202AE9AC00270112 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E29758A202AE9AC00270112 /* BeaconFramework.framework */; };
-		1E29758D202AE9B000270112 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E29758A202AE9AC00270112 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EE8F62C207C751F003A2390 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F62B207C751F003A2390 /* BeaconFramework.framework */; };
+		1EE8F62D207C751F003A2390 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F62B207C751F003A2390 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E29758D202AE9B000270112 /* BeaconFramework.framework in Embed Frameworks */,
+				1EE8F62D207C751F003A2390 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 		1E297580202AE91B00270112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E297582202AE91B00270112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E297583202AE91B00270112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1E29758A202AE9AC00270112 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		1EE8F62B207C751F003A2390 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E29758B202AE9AC00270112 /* BeaconFramework.framework in Frameworks */,
+				1EE8F62C207C751F003A2390 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +62,7 @@
 		1E297565202AE91B00270112 = {
 			isa = PBXGroup;
 			children = (
+				1EE8F62B207C751F003A2390 /* BeaconFramework.framework */,
 				1E297570202AE91B00270112 /* Beaconframework_objc */,
 				1E29756F202AE91B00270112 /* Products */,
 			);
@@ -78,7 +79,6 @@
 		1E297570202AE91B00270112 /* Beaconframework_objc */ = {
 			isa = PBXGroup;
 			children = (
-				1E29758A202AE9AC00270112 /* BeaconFramework.framework */,
 				1E297571202AE91B00270112 /* AppDelegate.h */,
 				1E297572202AE91B00270112 /* AppDelegate.m */,
 				1E297574202AE91B00270112 /* ViewController.h */,
@@ -308,6 +308,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Beaconframework_objc",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Beaconframework_objc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -328,6 +329,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Beaconframework_objc",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Beaconframework_objc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
