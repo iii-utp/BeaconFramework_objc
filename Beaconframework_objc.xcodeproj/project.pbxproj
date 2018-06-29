@@ -14,18 +14,18 @@
 		1E29757E202AE91B00270112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E29757D202AE91B00270112 /* Assets.xcassets */; };
 		1E297581202AE91B00270112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E29757F202AE91B00270112 /* LaunchScreen.storyboard */; };
 		1E297584202AE91B00270112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E297583202AE91B00270112 /* main.m */; };
-		1EE8F644207C9C19003A2390 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F643207C9C19003A2390 /* BeaconFramework.framework */; };
-		1EE8F645207C9C19003A2390 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE8F643207C9C19003A2390 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1ED54A9620E5E2EE00DC4A99 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED54A9520E5E2EE00DC4A99 /* BeaconFramework.framework */; };
+		1ED54A9720E5E2EE00DC4A99 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED54A9520E5E2EE00DC4A99 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1E29758E202AE9B000270112 /* Embed Frameworks */ = {
+		1ED54A9820E5E2EE00DC4A99 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1EE8F645207C9C19003A2390 /* BeaconFramework.framework in Embed Frameworks */,
+				1ED54A9720E5E2EE00DC4A99 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 		1E297580202AE91B00270112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E297582202AE91B00270112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E297583202AE91B00270112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1EE8F643207C9C19003A2390 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		1ED54A9520E5E2EE00DC4A99 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE8F644207C9C19003A2390 /* BeaconFramework.framework in Frameworks */,
+				1ED54A9620E5E2EE00DC4A99 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		1E297565202AE91B00270112 = {
 			isa = PBXGroup;
 			children = (
-				1EE8F643207C9C19003A2390 /* BeaconFramework.framework */,
+				1ED54A9520E5E2EE00DC4A99 /* BeaconFramework.framework */,
 				1E297570202AE91B00270112 /* Beaconframework_objc */,
 				1E29756F202AE91B00270112 /* Products */,
 			);
@@ -103,7 +103,7 @@
 				1E29756A202AE91B00270112 /* Sources */,
 				1E29756B202AE91B00270112 /* Frameworks */,
 				1E29756C202AE91B00270112 /* Resources */,
-				1E29758E202AE9B000270112 /* Embed Frameworks */,
+				1ED54A9820E5E2EE00DC4A99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,7 +301,6 @@
 		1E297588202AE91B00270112 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUC33YQX2H;
@@ -322,7 +321,6 @@
 		1E297589202AE91B00270112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUC33YQX2H;
