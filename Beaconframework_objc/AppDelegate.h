@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <BeaconFramework/BeaconFramework.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) IIINotification *notification;
-@property (nonatomic, strong) IIIBeacon *iiibeacon;
-@property (nonatomic, strong) BeaconInfo *beacon_info;
-@property (nonatomic, strong) IIIBeaconDetection *detection;
 
 
 @end
