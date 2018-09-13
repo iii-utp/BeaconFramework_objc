@@ -52,32 +52,36 @@
 
 //找到對應Beacon (required!!)
 - (void)BeaconDetectd{
+    
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
+            NSLog(key.id);
             if ([self insertData:key.id] == true){
                 [_beaconIdList addObject:key.id];
                 [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"YOUR_APP_KEY" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
-                        if (item.content.products.count > 0) {
-                            NSLog(@"%@", [item.content.products[0] sellerName]);
-                            [_sellerNameList addObject:[item.content.products[0] sellerName]];
+                        if (item.content.coupons.count > 0) {
+                            NSLog(@"%@", [item.content.coupons[0] sellerName]);
+                            [_sellerNameList addObject:[item.content.coupons[0] sellerName]];
+
                             dispatch_async(dispatch_get_main_queue(), ^{
                                 [_tableView reloadData];
                             });
                         }
                     }
                 }];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [_tableView reloadData];
+                });
             }
         }
     }
 }
 
 - (BOOL)insertData:(NSString *)data {
-    for (NSString *string in _beaconIdList){
-        if (string == data){
-            return false;
-        }
+    if ([_beaconIdList indexOfObject:data] != NSNotFound){
+        return false;
     }
     return true;
 }
