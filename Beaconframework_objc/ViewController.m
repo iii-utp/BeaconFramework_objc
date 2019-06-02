@@ -55,7 +55,6 @@
     
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
-            NSLog(key.id);
             if ([self insertData:key.id] == true){
                 [_beaconIdList addObject:key.id];
                 [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"YOUR_APP_KEY" completion:^(message *item, BOOL Sucess){
